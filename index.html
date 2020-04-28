@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crudPHP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h2 class="text-center">CRUD DE CATEGORIAS</h2>
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-12">
+                    <h4>AGREGAR</h4>
+                    <form method="POST" action="agregar.php" class="border p-3">
+                        <div class="form-group">
+                            <label for="nombreProducto">Nombre Categoria</label>
+                            <input type="text" class="form-control" id="nombreCategoria" name="nombreCategoria" placeholder="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="categoriaProducto">Codigo Categoría</label>
+                            <input type="text" class="form-control" id="codigoCategoria" name="codigoCategoria" placeholder="codigo">
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionProducto">Descripción</label>
+                            <textarea class="form-control" id="descripcionCategoria" name="descripcionCategoria" rows="3"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Agregar" name="btnEnviar">
+                    </form>
+                    <hr>
+                </div>
+
+                <!-- <div class="col-12">
+                    <h4>CONSULTAR/BUSCAR</h4>
+                    <form method="GET" action="buscar.php" class="border p-3">
+                        <div class="form-group">
+                            <label for="busquedaNombreProducto">Nombre producto</label>
+                            <input type="text" class="form-control" id="busquedaNombreProducto" name="busquedaNombreProducto" placeholder="nombre">
+                            <small id="emailHelp" class="form-text text-muted">Si lo desea no escriba ningún nombre para que el software busque todos los productos por usted</small>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Buscar">
+                    </form>
+                    <p>Nota: Escriba el nombre del producto que quiere consultar en base de datos y haga clic en buscar </p>
+                    <hr>
+                </div>
+
+                <div class="col-12">
+                    <h4>ELIMINAR</h4>
+                    <form method="POST" action="consultas.php" class="border p-3">
+                        <div class="form-group">
+                            <label for="eliminarNombreProducto">Nombre producto</label>
+                            <input type="text" class="form-control" id="eliminarNombreProducto" name="eliminarNombreProducto" placeholder="nombre">
+                            <small id="emailHelp" class="form-text text-muted">Debe escribir un nombre de producto para eliminarlo</small>
+                        </div>
+                        <input type="submit" class="btn btn-danger" value="Eliminar">
+                    </form>
+                    <hr>
+                </div> -->
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
